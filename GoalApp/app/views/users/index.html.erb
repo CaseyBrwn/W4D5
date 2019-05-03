@@ -1,0 +1,12 @@
+<h1>Users Index</h1>
+
+<form action="<%= users_url %>" method="POST">
+<%= auth_token %>
+
+<%  @users.each do |user|%>
+<%= user.username %>
+<br>
+<% end%>
+
+
+</form>
